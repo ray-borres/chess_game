@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHECKMATE OR GET CHECKED</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="game-container">
+
+    <div class="header">
+        <h1>CHECKMATE THE King</h1>
+        <p>Defeat the black king before the bot defeats yours.</p>
+    </div>
+
+    <div class="game-layout">
+
+        <div class="board-section">
+
+            <div class="turn-box">
+                <span>TURN</span>
+                <strong id="turn">WHITE</strong>
+            </div>
+
+            <div id="board" class="board"></div>
+
+        </div>
+
+        <div class="side-panel">
+
+            <h2>Chess Challenge</h2>
+
+            <p class="instruction">
+                You control White. The black pieces are controlled by the bot.
+            </p>
+
+            <div class="info">
+                <span>Status</span>
+                <strong id="status">IN PROGRESS</strong>
+            </div>
+
+            <div class="info">
+                <span>Turn</span>
+                <strong id="side">WHITE</strong>
+            </div>
+
+            <div class="info">
+                <span>Moves</span>
+                <strong id="moves">0</strong>
+            </div>
+
+            <div class="info">
+                <span>Bot</span>
+                <strong id="botStatus">READY</strong>
+            </div>
+
+            <div id="message" class="message">
+                Select a white piece.
+            </div>
+
+            <div id="checkMessage" class="check-message"></div>
+
+            <button id="reset" type="button">
+                Reset Game
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
